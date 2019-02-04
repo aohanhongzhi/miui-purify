@@ -71,7 +71,7 @@ return-void
 - VipAccount
 - XMPass
 
-## 制作miui-purify卡刷包
+## 制作 `miui-purify` 卡刷包
 下载模板文件 `sample.zip` 解压，目录结构如下：
 ```
 .
