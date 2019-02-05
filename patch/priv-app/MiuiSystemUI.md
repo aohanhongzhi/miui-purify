@@ -8,6 +8,6 @@ apktool命令： `apktool d -r *.apk`
 ```
 .method private buildShortcutClickIntent()Landroid/content/Intent;
 # 将代码 sget-boolean v1, Lcom/android/systemui/Constants;->IS_INTERNATIONAL:Z 修改为：
-sget-boolean v1, Lcom/winter/mysu;->TRUE:Z
+sget-boolean v1, Lcom/winterssy/MiuiPurify;->TRUE:Z
 ```
 

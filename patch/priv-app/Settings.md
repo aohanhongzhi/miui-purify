@@ -36,7 +36,7 @@ invoke-virtual {v0, v2}, Landroid/content/pm/PackageManager;->getDefaultBrowserP
 代码路径： `com/android/settings/device`
 ```
 # 搜索代码 Lmiui/os/Build;->IS_GLOBAL_BUILD:Z ，该语句会在多个方法出现，定位代码结构与示例方法类似的布尔方法
-# 将 Lmiui/os/Build;->IS_GLOBAL_BUILD:Z 修改为 Lcom/winter/mysu;->TRUE:Z
+# 将 Lmiui/os/Build;->IS_GLOBAL_BUILD:Z 修改为 Lcom/winterssy/MiuiPurify;->TRUE:Z
 # 参考示例：
 .method public static Ib(Landroid/content/Context;)Z
     .locals 1
@@ -84,17 +84,17 @@ invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference
 代码位置： `com/android/settings/applications/ApplicationsContainer.smali`
 ```
 .method public onActivityCreated
-# 搜索 Lmiui/os/Build;->IS_TABLET:Z 将其改成 Lcom/winter/mysu;->TRUE:Z
+# 搜索 Lmiui/os/Build;->IS_TABLET:Z 将其改成 Lcom/winterssy/MiuiPurify;->TRUE:Z
 ```
 代码位置： `com/android/settings/applications/ManageApplicationsActivity.smali`
 ```
 .method protected onCreate
-# 搜索 Lmiui/os/Build;->IS_TABLET:Z 将其改成 Lcom/winter/mysu;->TRUE:Z
+# 搜索 Lmiui/os/Build;->IS_TABLET:Z 将其改成 Lcom/winterssy/MiuiPurify;->TRUE:Z
 ```
 代码位置： `com/android/settings/search/tree/ApplicationsSettingsTree.smali`
 ```
 .method public getIntent
-# 搜索 Lmiui/os/Build;->IS_TABLET:Z 将其改成 Lcom/winter/mysu;->TRUE:Z
+# 搜索 Lmiui/os/Build;->IS_TABLET:Z 将其改成 Lcom/winterssy/MiuiPurify;->TRUE:Z
 ```
 代码位置： `com/android/settings/MiuiSettings.smali`
 ```
@@ -116,7 +116,7 @@ invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content
 代码位置： `com/android/settings/SecuritySettings.smali`
 ```
 # 搜索 ad_control_settings 定位相关方法
-# 将该方法中的 Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z 修改为 Lcom/winter/mysu;->TRUE:Z
+# 将该方法中的 Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z 修改为 Lcom/winterssy/MiuiPurify;->TRUE:Z
 ```
 代码位置： `res/xml/security_settings_debug_log.xml`
 ```

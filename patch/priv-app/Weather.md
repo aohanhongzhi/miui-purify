@@ -31,7 +31,7 @@ apktool命令： `apktool d -r *.apk`
 invoke-static {p0}, Lcom/miui/weather2/tools/ToolUtils;->canRequestCommercialInfo(Landroid/content/Context;)Z
 
 move-result v0
-# 修改为 sget-boolean v0, Lcom/winter/mysu;->TRUE:Z
+# 修改为 sget-boolean v0, Lcom/winterssy/MiuiPurify;->TRUE:Z
 ```
 
 ### 移除信息流设置项

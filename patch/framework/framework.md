@@ -6,6 +6,6 @@ JAR位置： `/system/framework/framework.jar`
 ```
 .method public onClick(Landroid/view/View;)V
 # 关键代码：android.intent.action.WEB_SEARCH
-# 将其上方的 Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z 修改为 Lcom/winter/mysu;->TRUE:Z
+# 将其上方的 Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z 修改为 Lcom/winterssy/MiuiPurify;->TRUE:Z
 # 如果你删除了MIUI搜索APP，必须执行此修改，否则点击会FC
 ```

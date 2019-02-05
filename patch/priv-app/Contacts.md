@@ -8,7 +8,7 @@ apktool命令： `apktool d -r *.apk`
 定位代码： 在 `res/values/public.xml` 中分别找到 `dialer_menu_recharge` 、`dialer_menu_mobiledata` 对应的id
 ```
 .method private createMenuItems()V
-# 利用 sget-boolean v0, Lcom/winter/mysu;->FALSE:Z 进行跳转，不创建相关菜单
+# 利用 sget-boolean v0, Lcom/winterssy/MiuiPurify;->FALSE:Z 进行跳转，不创建相关菜单
 
 # 移除小红点提示？
 .method public static isShowDialerMenuRedDot

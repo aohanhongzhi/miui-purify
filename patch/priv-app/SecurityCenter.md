@@ -7,7 +7,7 @@ apktool命令： `apktool d -r *.apk`
 代码位置： `com/miui/networkassistant/ui/NetworkAssistantActivity.smali`
 ```
 .method private checkTrafficPurchaseEnable
-# 搜索 Lcom/miui/networkassistant/utils/DeviceUtil;->IS_INTERNATIONAL_BUILD:Z 将其改为 Lcom/winter/mysu;->TRUE:Z
+# 搜索 Lcom/miui/networkassistant/utils/DeviceUtil;->IS_INTERNATIONAL_BUILD:Z 将其改为 Lcom/winterssy/MiuiPurify;->TRUE:Z
 ```
 
 ### 移除网络助手的流量购买提醒
@@ -51,7 +51,7 @@ Lcom/miui/permcenter/install/i;->aB()Z
 # 在 com/miui/permcenter 路径查找对应方法，return ture
 
 # 如果你使用的是开发版，希望移除自带的ROOT权限管理
-# 可将该方法中的 Lmiui/os/Build;->IS_STABLE_VERSION:Z 修改为 Lcom/winter/mysu;->TRUE:Z
+# 可将该方法中的 Lmiui/os/Build;->IS_STABLE_VERSION:Z 修改为 Lcom/winterssy/MiuiPurify;->TRUE:Z
 ```
 
 ### 移除安全体检、游戏加速、病毒扫描页的资讯推荐
@@ -66,7 +66,7 @@ Lcom/miui/permcenter/install/i;->aB()Z
 ```
 # 反编译res，在 values/public.xml 中找到 display_gamebooster_xunyou 对应的id，如 0x7f0c0004
 # 然后在该路径搜索找到的 id 定位相应布尔方法，return false
-# 相当于将方法中的 Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z 修改为 Lcom/winter/mysu;->TRUE:Z
+# 相当于将方法中的 Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z 修改为 Lcom/winterssy/MiuiPurify;->TRUE:Z
 ```
 
 ### 移除安全体检不必要的扫描检测项
@@ -204,7 +204,7 @@ invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreferen
 ### 移除应用管理的资源推荐，关闭应用升级提醒
 代码路径/位置： `com/miui/appmanager/model` 、`com/miui/appmanager/AppManagerMainActivity.smali`
 ```
-# 搜索 Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z 将其改成 Lcom/winter/mysu;->TRUE:Z
+# 搜索 Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z 将其改成 Lcom/winterssy/MiuiPurify;->TRUE:Z
 # ps：在 AppManagerMainActivity.smali 中有个存在关键代码 com.google.gms 的方法跳过不用修改
 ```
 代码路径： `com/miui/appmanager`
